@@ -1,0 +1,118 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone_100: hsl(30, 54%, 90%);
+--Stone_150: hsl(30, 18%, 87%);
+--Stone_600: hsl(30, 10%, 34%);
+--Stone_900: hsl(24, 5%, 18%);
+--Brown_800: hsl(14, 45%, 36%);
+--Rose_800: hsl(332, 51%, 32%);
+--Rose_50: hsl(330, 100%, 98%);
+}
+*{
+    margin:0;
+    padding:0;
+     box-sizing: border-box;
+}
+body{
+background-color:var(--Stone_100);
+display: flex;
+justify-content: center;
+align-items: center;
+padding:3rem;
+height: fit-content;
+}
+.card-recipe{
+    height: fit-content;
+    background-color: var(--White);
+    width: 45rem;
+    padding: 2.7rem;
+    border-radius: 2rem;
+    color:var(--Stone_600);
+}
+img{
+    width: 100%;
+    border-radius: .7rem;
+}
+section,table,p,li,h3{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1,h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.card-recipe h1{
+    font-size: 2.3rem;
+    margin: 1rem 0 1rem 0;
+    color: var(--Stone_900);
+}
+
+.section-rose{
+    font-family: var(--familyOutfit);
+    background-color: var(--Rose_50);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1.2rem 0 1.2rem 0;
+}
+section h3{
+    color: var(--Rose_800)
+}
+.preparation li{
+    padding-left: 1rem;
+    margin:.7rem 0 0 1.4rem;
+}
+h2{
+    font-size: 1.7rem;
+    color: var(--Brown_800);
+}
+
+hr{
+    border: solid .1rem rgb(209, 200, 200);
+  margin: 2rem 0 2rem 0;
+}
+.list-colorBrowm li{
+    margin:.8rem 0 0 1rem;
+    padding-left: 1rem;
+}
+.list-colorBrowm ::marker{
+    color: var(--Brown_800);
+}
+
+
+table{
+    margin:1rem 0 1rem 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+table tr{
+  border-bottom:solid 1px var(--Stone_150);
+   
+}
+td{
+    padding:1.6rem 0 .6rem  1.4rem;
+   width: 50%; 
+}
+.td-brown{
+    color: var(--Brown_800);
+    font-weight: 600;
+}
+
+@media (max-width:640px){
+     body{
+        padding:0;
+     }
+    .card-recipe{
+      width: 100%;
+      padding:0;
+      border-radius: 0px;
+    }
+    img{
+        border-radius: 0px;
+    }
+    .section-recipe{
+        margin:0 2rem 0 2rem;
+    }
+}
