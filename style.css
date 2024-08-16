@@ -19,7 +19,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding:3rem;
-height: 220vh;
+height: auto;
 }
 .card-recipe{
     height: fit-content;
